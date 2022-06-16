@@ -50,7 +50,7 @@ xfconf-query -c xsettings -p /Net/IconThemeName -s "Papirus-Dark"
 xfconf-query -c xsettings -p /Net/ThemeName -s "Arc-Dark"
 xfconf-query -c xfwm4 -p /general/theme -s "Arc-Dark"
 xfconf-query -c xfwm4 -p /general/workspace_count -s "2"
-xfconf-query -c xfwm4-desktop -p /backdrop/screen0/monitorVirtual-1/workspace0/last-image -s /usr/backgrounds/purplegalaxy.jpg
+xfconf-query -c xfwm4-desktop -p /backdrop/screen0/monitor0/last-image -s /usr/backgrounds/purplegalaxy.jpg
 
 
 #install video player
