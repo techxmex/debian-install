@@ -14,7 +14,7 @@ sudo apt install -y build-essential
 sudo apt install -y intel-microcode 
 
 #XFCE packages
-sudo apt install -y xfce4 xfce4-goodies xconf
+sudo apt install -y xfce4 xfce4-goodies xfconf
 
 # Browser Installation (eg. chromium)
 sudo apt install -y firefox-esr 
