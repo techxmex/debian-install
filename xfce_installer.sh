@@ -77,6 +77,8 @@ flatpak install flathub com.makemkv.MakeMKV -y
 # Install LightDM GTK Greeter Settings (lightdm,lightdm-gtk-greeter installs with xfce)
 sudo apt install -y lightdm-gtk-greeter-settings slick-greeter
 sudo cp -f lightdm.conf /etc/lightdm/
+sudo cp -f slick-greeter.conf /etc/lightdm/
+sudo cp -f purplegalaxy.jpg /usr/share/backgrounds/
 sudo systemctl enable lightdm
 
 sudo apt autoremove
