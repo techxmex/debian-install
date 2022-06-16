@@ -47,28 +47,28 @@ sudo apt install -y vim
 sudo apt install fonts-font-awesome fonts-powerline fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus
 
 #install icons and theme
-sudo apt install papirus-icon-theme arc-theme
+sudo apt install -y papirus-icon-theme arc-theme
 
 #install video player
-sudo apt install celluloid
+sudo apt install -y celluloid
 
 #install video transcoder
-sudo apt install handbrake
+sudo apt install -y handbrake
 
 #install video codecs
 sudo apt install libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi libdvdread8 libdvdcss2 -y
 sudo dpkg-reconfigure libdvd-pkg -y
 
 #install torrent app
-sudo apt install transmission-gtk
+sudo apt install -y transmission-gtk
 
 #install vir-manager
-sudo apt install virt-manager
+sudo apt install -y virt-manager
 sudo gpasswd -a louis libvirt
 sudo gpasswd -a louis libvirt-qemu
 
 #flatpak setup
-sudo apt install flatpak
+sudo apt install -y flatpak
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 #flatpak install firefox
