@@ -56,8 +56,8 @@ sudo apt install -y celluloid
 sudo apt install -y handbrake
 
 #install video codecs
-sudo apt install libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi libdvdread8 libdvdcss2 -y
-sudo dpkg-reconfigure libdvd-pkg -y
+sudo apt install -y libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly gstreamer1.0-vaapi libdvdread8 libdvdcss2
+sudo dpkg-reconfigure libdvd-pkg 
 
 #install torrent app
 sudo apt install -y transmission-gtk
@@ -75,7 +75,7 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 flatpak install flathub org.mozilla.firefox -y
 
 # Install LightDM GTK Greeter Settings (lightdm,lightdm-gtk-greeter installs with xfce)
-sudo apt install -y lightdm-gtk-greeter-settings
+sudo apt install -y lightdm-gtk-greeter-settings slick-greeter
 sudo systemctl enable lightdm
 
 sudo apt autoremove
