@@ -14,7 +14,7 @@ sudo apt install -y build-essential
 sudo apt install -y intel-microcode 
 
 #XFCE packages
-sudo apt install -y xfce4 xfce4-goodies
+sudo apt install -y xfce4 xfce4-goodies xconf
 
 # Browser Installation (eg. chromium)
 sudo apt install -y firefox-esr 
@@ -25,10 +25,7 @@ sudo apt install -y alsa-utils volumeicon-alsa
 # Neofetch/HTOP
 sudo apt install -y neofetch htop
 
-# EXA installation
-# replace ls command in .bashrc file with line below
-# alias ls='exa -al --long --header --color=always --group-directories-first' 
-sudo apt install -y exa
+#copy my bashrc file
 sudo cp -f .bashrc ~/
 
 # Printing and bluetooth (if needed)
