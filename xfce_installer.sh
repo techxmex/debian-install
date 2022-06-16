@@ -29,6 +29,7 @@ sudo apt install -y neofetch htop
 # replace ls command in .bashrc file with line below
 # alias ls='exa -al --long --header --color=always --group-directories-first' 
 sudo apt install -y exa
+sudo cp -f .bashrc ~/
 
 # Printing and bluetooth (if needed)
 sudo apt install -y cups libcupsimage2
