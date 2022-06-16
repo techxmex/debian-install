@@ -46,6 +46,9 @@ sudo apt install fonts-font-awesome fonts-powerline fonts-ubuntu fonts-liberatio
 
 #install icons and theme
 sudo apt install -y papirus-icon-theme arc-theme
+xfconf-query -c xsettings -p /Net/IconThemeName -s "Papirus-Dark"
+xfconf-query -c xsettings -p /Net/ThemeName -s "Arc-Dark"
+xfconf-query -c xfwm4 -p /general/theme -s "Arc-Dark"
 
 #install video player
 sudo apt install -y celluloid
