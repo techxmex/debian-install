@@ -72,8 +72,9 @@ sudo gpasswd -a louis libvirt-qemu
 sudo apt install -y flatpak
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-#flatpak install firefox
+#flatpak install firefox & brave
 flatpak install flathub org.mozilla.firefox -y
+flatpak install flathub com.brave.Browser -y
 
 # Install LightDM GTK Greeter Settings (lightdm,lightdm-gtk-greeter installs with xfce)
 sudo apt install -y lightdm-gtk-greeter-settings slick-greeter
