@@ -19,9 +19,6 @@ sudo apt install -y xfce4 xfce4-goodies
 # Browser Installation (eg. chromium)
 sudo apt install -y firefox-esr 
 
-#sudo systemctl enable avahi-daemon
-#sudo systemctl enable acpid
-
 # Sound packages (pulseaudio installed prior)
 sudo apt install -y alsa-utils volumeicon-alsa
 
