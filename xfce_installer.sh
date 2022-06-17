@@ -1,10 +1,6 @@
 #!/bin/bash
 
-# Default packages are for the configuration and corresponding .config folders
-# Install packages after installing base Debian with no GUI
-
-# xorg display server installation
-sudo apt install -y xorg 
+# Install packages after installing Debian XFCE
 
 # Build-essential.
 sudo apt install -y build-essential 
@@ -13,15 +9,6 @@ sudo apt install -y build-essential
 # sudo apt install -y amd-microcode
 sudo apt install -y intel-microcode 
 
-#XFCE packages
-sudo apt install -y xfce4 xfce4-goodies xfconf
-
-# Browser Installation (eg. chromium)
-sudo apt install -y firefox-esr 
-
-# Sound packages (pulseaudio installed prior)
-sudo apt install -y alsa-utils volumeicon-alsa
-
 # Neofetch/HTOP
 sudo apt install -y neofetch htop
 
@@ -29,12 +16,7 @@ sudo apt install -y neofetch htop
 sudo cp -f .bashrc ~/
 
 # Printing and bluetooth (if needed)
-sudo apt install -y cups libcupsimage2
-sudo apt install -y bluez blueman
-
-sudo systemctl enable bluetooth
-sudo systemctl enable cups
-
+sudo apt install -y libcupsimage2
 sudo systemctl stop cups-browsed
 sudo systemctl disable cups-browsed
 
@@ -82,7 +64,6 @@ sudo cp -f slick-greeter.conf /etc/lightdm/
 sudo cp -f purplegalaxy.jpg /usr/share/backgrounds/
 sudo systemctl enable lightdm
 
-
-sudo apt autoremove
-
-printf "\e[1;32mTime to reboot! Thanks!\e[0m\n"
+sudo apt remove quodlibet parole exfalso -y
+sudo apt purge libreoffice* -y
+sudo apt autoremove -y
