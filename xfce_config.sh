@@ -9,6 +9,9 @@ sudo apt install -y build-essential
 # sudo apt install -y amd-microcode
 sudo apt install -y intel-microcode 
 
+# for mac
+sudo apt install mbpfan -y
+
 # Neofetch/HTOP
 sudo apt install -y neofetch htop
 
