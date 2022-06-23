@@ -27,7 +27,7 @@ sudo systemctl disable cups-browsed
 sudo apt install -y vim
 
 # Install fonts
-sudo apt install fonts-font-awesome fonts-powerline fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus
+sudo apt install fonts-font-awesome fonts-powerline fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus texlive-fonts-extra
 
 #install icons and theme
 sudo apt install -y papirus-icon-theme arc-theme
